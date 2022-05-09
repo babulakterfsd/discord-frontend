@@ -1,0 +1,155 @@
+.mainDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+h2 {
+  size: 38px;
+  margin-bottom: 0;
+}
+h3 {
+  size: 38px;
+}
+h4 {
+  size: 28px;
+}
+h5 {
+  size: 24px;
+  color: #ffff;
+}
+h6 {
+  size: 20px;
+}
+p {
+  size: 14px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div2 {
+  display: flex;
+  height: 50vh;
+  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-content: center;
+}
+.div3 {
+  grid-area: 1 / 2 / 3 / 3;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.crazyLogo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.mobile {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  top: 28%;
+}
+
+.progressBox {
+  margin-top: 20px;
+  height: 20%;
+  width: 40%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background: #cfd4e2;
+  border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.box_active {
+  width: 60px;
+  height: 60px;
+  background: #63c995;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.line12 {
+  background-color: #63c995;
+  flex-grow: 1;
+  border: 2px solid #63c995;
+}
+.line23 {
+  background-color: #cfd4e2;
+  flex-grow: 1;
+  border: 2px solid #cfd4e2;
+}
+.discordBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200%;
+  background: #5865f2;
+  border-radius: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+a :hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.discordSignIn {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 80%;
+  text-align: left;
+  /* justify-content: right; */
+}
+
+.progressBoxDetail {
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  height: 10%;
+  text-align: center;
+}
+
+.hboxDetail1 {
+  color: #63c995;
+}
+.hboxDetail2 {
+  color: #cfd4e2;
+}
+.hboxDetail3 {
+  color: #081c54;
+}
+
+.termsOfService {
+  position: absolute;
+  bottom: 2%;
+  right: 8%;
+}
