@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ethers } from "ethers";
 import logo from "../assets/images/ezgif1.png";
 import "./WalletCard.css";
 import crypto from "../assets/images/crypto.png";
 import { ImCheckmark } from "react-icons/im";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import mobile from "../assets/images/mobile.png";
 import axios from "axios";
 
 import "./WalletCard.css";
@@ -95,7 +96,7 @@ const WalletCard = () => {
   return (
     <>
       <div className="mainDiv">
-        <div
+        {/* <div
           style={{
             color: "blue",
             position: "absolute",
@@ -111,10 +112,14 @@ const WalletCard = () => {
             {" "}
             <a href="localhost:3000/">Back</a>
           </p>
-        </div>
+        </div> */}
         <div className="div1">
-          <img className="crazyLogo" src={logo} alt={"crazyLogo"} />
-          <img className="mobile" src={crypto} alt={"cryptoimage"} />
+        <Link to="/">
+           <img className="crazyLogo" src={logo} alt={"crazyLogo"}  />
+        </Link>
+        <Link to="/">
+        <img className="mobile" src={mobile} alt={"mobileimage"} />
+        </Link>
         </div>
         <div className="div2">
           <div className="holder">

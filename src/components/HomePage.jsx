@@ -4,6 +4,7 @@ import "./HomePage.css";
 import logo from "../assets/images/ezgif1.png";
 import mobile from "../assets/images/mobile.png";
 import { FaDiscord } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function HomePage() {
 
@@ -11,8 +12,12 @@ function HomePage() {
   return (
     <div className="mainDiv">
       <div className="div1">
-        <img className="crazyLogo" src={logo} alt={"crazyLogo"} />
+        <Link to="/">
+           <img className="crazyLogo" src={logo} alt={"crazyLogo"}  />
+        </Link>
+        <Link to="/">
         <img className="mobile" src={mobile} alt={"mobileimage"} />
+        </Link>
       </div>
       <div className="div2">
         <div className="holder">
