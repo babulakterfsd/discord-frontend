@@ -7,8 +7,6 @@ import { FaDiscord } from "react-icons/fa";
 
 function HomePage() {
 
-  
-
 
   return (
     <div className="mainDiv">
@@ -56,7 +54,7 @@ function HomePage() {
           <h6>Select what network and social media you want signin below </h6>
         </div>
         <div>
-          <a href="https://discord.com/api/oauth2/authorize?client_id=967641012371587103&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fapi%2Fauth%2Fdiscord%2Fredirect&response_type=code&scope=identify%20email%20guilds">
+          <a href="https://discord.com/api/oauth2/authorize?client_id=972802763480248320&redirect_uri=https%3A%2F%2Fytthef1s07.execute-api.eu-central-1.amazonaws.com%2Flatest%2Fapi%2Fauth%2Fdiscord%2Fredirect&response_type=code&scope=identify%20guilds%20email">
             <button type="button" className="discordBtn">
               <FaDiscord
                 style={{

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLocation } from 'react-router-dom';
 import { ethers } from "ethers";
 import logo from "../assets/images/ezgif1.png";
 import "./WalletCard.css";
 import crypto from "../assets/images/crypto.png";
 import { ImCheckmark } from "react-icons/im";
-import { AiOutlineArrowLeft, AiFillCheckCircle } from "react-icons/ai";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 import axios from "axios";
 
 import "./WalletCard.css";
