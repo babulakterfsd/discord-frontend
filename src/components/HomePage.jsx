@@ -12,18 +12,18 @@ function HomePage() {
   return (
     <div className="mainDiv">
       <div className="div1">
-        <Link to="/">
-           <img className="crazyLogo" src={logo} alt={"crazyLogo"}  />
-        </Link>
-        <Link to="/">
-        <img className="mobile" src={mobile} alt={"mobileimage"} />
-        </Link>
+        <img className="mobile" src={mobile} alt={"mobileimage"} style={{height: '100%', marginTop: '-180px'}} />
       </div>
       <div className="div2">
-        <div className="holder">
+        <div style={{display: 'flex', justifyContent: 'start', alignItems: 'center', marginTop: '80px'}}>
+        <div style={{marginLeft: '-220px'}}>
+        <Link to="/">
+           <img  src={logo} alt={"crazyLogo"} style={{height: '150px', width: '220px', marginTop: '25px'}} />
+        </Link>
+        </div>
           <h2>Holder Verification</h2>
         </div>
-        <div className="progressBox">
+        <div className="progressBox" style={{marginBottom: '10px', marginTop: '-25px'}}>
           <div className="box box_active">
             <h3 className="boxText">1</h3>
           </div>
@@ -55,8 +55,8 @@ function HomePage() {
       </div>
       <div className="div3">
         <div className="discordSignIn">
-          <h2>Let's Get started</h2>
-          <h6>Select what network and social media you want signin below </h6>
+          <h2>Let’s Get Started!</h2>
+          <h6 className="fw-semi-bold">Click on the button below to allow us to see who you are in our Discord server</h6>
         </div>
         <div>
           <a href="https://discord.com/api/oauth2/authorize?client_id=972802763480248320&redirect_uri=https%3A%2F%2Fytthef1s07.execute-api.eu-central-1.amazonaws.com%2Flatest%2Fapi%2Fauth%2Fdiscord%2Fredirect&response_type=code&scope=identify%20guilds%20email">
@@ -76,9 +76,9 @@ function HomePage() {
       </div>
       <div className="termsOfService">
         <p>
-          By signing in I agree to platform's
-          <span style={{ color: "blue" }}>Terms of service</span> and
-          <span style={{ color: "blue" }}>Privacy policy</span>
+        By signing in, I agree to the platform’s 
+          <span style={{ color: "blue" }}> Terms of Services</span> and its
+          <span style={{ color: "blue" }}> Privacy Policy</span>
         </p>
       </div>
     </div>

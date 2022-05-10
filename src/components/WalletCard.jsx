@@ -96,36 +96,19 @@ const WalletCard = () => {
   return (
     <>
       <div className="mainDiv">
-        {/* <div
-          style={{
-            color: "blue",
-            position: "absolute",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            left: "50%",
-            top: "3%",
-          }}
-        >
-          <AiOutlineArrowLeft size={"15"} />
-          <p style={{ fontWeight: "bold" }}>
-            {" "}
-            <a href="localhost:3000/">Back</a>
-          </p>
-        </div> */}
-        <div className="div1">
+      <div className="div1">
+        <img className="mobile" src={mobile} alt={"mobileimage"} style={{height: '100%', marginTop: '-180px'}} />
+      </div>
+        <div className="div2">
+        <div style={{display: 'flex', justifyContent: 'start', alignItems: 'center', marginTop: '80px'}}>
+        <div style={{marginLeft: '-220px'}}>
         <Link to="/">
-           <img className="crazyLogo" src={logo} alt={"crazyLogo"}  />
-        </Link>
-        <Link to="/">
-        <img className="mobile" src={mobile} alt={"mobileimage"} />
+           <img  src={logo} alt={"crazyLogo"} style={{height: '150px', width: '220px', marginTop: '25px'}} />
         </Link>
         </div>
-        <div className="div2">
-          <div className="holder">
-            <h2>Holder Verification</h2>
-          </div>
-          <div className="progressBox">
+          <h2>Holder Verification</h2>
+        </div>
+          <div className="progressBox" style={{marginBottom: '10px', marginTop: '-25px'}}>
             <div className="box1">
               <h3 className="boxText">
                 <ImCheckmark
@@ -229,7 +212,7 @@ const WalletCard = () => {
                     margin: "15px 0px 20px 0px ",
                   }}
                 >
-                  Select what network and wallet you want connect below{" "}
+                  Connect your wallet and prove us you own CrazyScientists!{" "}
                 </h6>
                 <div className="checkBox">
                   <input type="checkbox" />
@@ -250,11 +233,11 @@ const WalletCard = () => {
           )}
         </div>
         <div className="termsOfService">
-          <p>
-            By signing in I agree to platform's
-            <span style={{ color: "blue" }}>Terms of service</span> and
-            <span style={{ color: "blue" }}>Privacy policy</span>
-          </p>
+        <p>
+        By signing in, I agree to the platform’s 
+          <span style={{ color: "blue" }}> Terms of Services</span> and its
+          <span style={{ color: "blue" }}> Privacy Policy</span>
+        </p>
         </div>
       </div>
     </>

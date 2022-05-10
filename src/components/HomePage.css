@@ -53,11 +53,11 @@ p {
   align-items: flex-start;
   justify-content: center;
 }
-.crazyLogo {
+/* .crazyLogo {
   position: absolute;
   top: 10px;
   left: 20px;
-}
+} */
 .mobile {
   height: 350px;
   width: 350px;
